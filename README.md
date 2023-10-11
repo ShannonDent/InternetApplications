@@ -7,12 +7,14 @@ Node v14 or higher
 
 ### Setup
 
-`git clone https://github.com/MoreeZ/vue-vite-express-barebones-template`
-`npm install`
-`npm run start`
+1. `git clone https://github.com/MoreeZ/vue-vite-express-barebones-template`
+2. `npm install`
+3. `npm run start`
 
 ### Features
 
 The app uses `concurrently` to run the server and client app at the same time
+
 Vue is built using Vite. The --watch flag recompiles the project every time the client code changes.
+
 The server is ran using nodemon which allows it to restart every time a change is made.
