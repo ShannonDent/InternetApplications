@@ -8,8 +8,9 @@ Node v14 or higher
 ### Setup
 
 1. `git clone https://github.com/MoreeZ/vue-vite-express-barebones-template`
-2. `npm install`
-3. `npm run start`
+2. `cd ./vue-vite-express-barebones-template/`
+3. `npm install`
+4. `npm run start`
 
 ### Features
 
