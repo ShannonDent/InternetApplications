@@ -1,0 +1,34 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "main": "server.js",
+  "scripts": {
+    "server": "nodemon --exec babel-node .\\server\\server.js",
+    "watch-client": "vite build .\\client\\ -w -d",
+    "start": "concurrently \"npm run watch-client\" \"npm run server\" --timestamp-format \"HH:mm:ss\" --prefix \"{time} [{name}]\" --kill-others --names \"client,server\" "
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.5.1",
+    "body-parser": "^1.20.2",
+    "concurrent": "^0.3.2",
+    "express": "^4.18.2",
+    "node-fetch": "^3.3.2",
+    "vue": "^3.3.4",
+    "vue-router": "^4.2.4"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.23.0",
+    "@babel/node": "^7.22.19",
+    "@babel/preset-env": "^7.22.20",
+    "@vitejs/plugin-vue": "^4.3.4",
+    "concurrently": "^8.2.1",
+    "eslint": "^8.49.0",
+    "eslint-plugin-vue": "^9.17.0",
+    "nodemon": "^3.0.1",
+    "vite": "^4.4.9"
+  }
+}
